@@ -1,0 +1,116 @@
+#format()
+
+a='India is {} best country'
+print(a.format('the'))
+
+a='my name is {}'
+print(a.format('swaroop'))
+
+a='team India {} the match'
+print(a.format('won'))
+
+a='{0} is your {1}'
+print(a.format('what','name?'))
+
+#formatmap()
+
+a = {'x':'varada', 'y':'swaroop'}
+print("{x}'s last name is {y}".format_map(a))
+
+a={'x':'india','y':'country'}
+print('{x} is the {y}'.format_map(a))
+
+#index()
+
+a='india is the besy country'
+print(a.index('the'))
+
+a='swaroop'
+print(a.index('r'))
+
+a='india t is the best country'
+print(a.index('t',0,4))
+
+a='india t is the best country'
+print(a.index('t',0,8))
+
+#isalnum()
+
+a='India is a 1 country'
+x =a.isalnum()
+print(x)
+
+a='_India is the best country'
+x =a.isalnum()
+print(x)
+
+a='Indiaisa1country'
+x =a.isalnum()
+print(x)
+
+#isalpha()
+
+a='Indiaisthebestcountry'
+x =a.isalpha()
+print(x)
+
+a='_India is the best country'
+x =a.isalpha()
+print(x)
+
+a='India is the best country'
+x =a.isalpha()
+print(x)
+
+#isascii()
+
+a = "Company123"
+x = a.isascii()
+print(x)
+
+a = "Comp@ny123"
+x = a.isascii()
+print(x)
+
+a = "#*}omp@ny123"
+x = a.isascii()
+print(x)
+
+#isdecimal()
+
+a = "458" 
+x = a.isdecimal()
+print(x)
+
+a ='m45'
+x = a.isdecimal()
+print(x)
+
+a = "45.8" 
+x = a.isdecimal()
+print(x)
+
+a='\u0035'
+x = a.isdecimal()
+print(x)
+
+#isdigit()
+
+a='5216'
+x = a.isdigit()
+print(x)
+
+a='52.16'
+x = a.isdigit()
+print(x)
+
+a='\u0035'
+x = a.isdigit()
+print(x)
+
+a='\u0090'
+x = a.isdigit()
+print(x)
+
+
+
